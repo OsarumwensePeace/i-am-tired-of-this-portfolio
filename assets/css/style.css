@@ -1,0 +1,44 @@
+.body {
+    padding: 0;
+}
+
+.sidebar_open{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.sidebar_close{
+    grid-template-columns: 80px auto;
+    display: grid;
+}
+
+aside {
+    background-color: #d12e2e;
+    height: 100vh;
+}
+.aside {
+    position: fixed;
+}
+main {
+    background-color: aqua;
+}
+.nav-menu,
+.nav-menu-close {
+    cursor: pointer;
+    z-index: 100;
+}
+.nav-menu-close {
+    display: none;
+}
+.nav-menu:hover {
+    /* transform: scale(0.99); */
+}
+
+@media (max-width: 687px) {
+    .sidebar_open {
+        grid-template-columns: 80px auto;
+    }
+    .sidebar_close {
+        grid-template-columns: 350px auto;
+    }
+}
