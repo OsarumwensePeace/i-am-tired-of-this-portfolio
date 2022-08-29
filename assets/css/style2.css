@@ -1,0 +1,169 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #f5f6fa;
+}
+
+.sidebar {
+    background: #100901;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.sidebar .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+ul li a:hover,
+ul li a.active{
+    color: #0c7db1;
+
+    background:rgb(226, 229, 231);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+ul li a:hover .icon,
+ul li a.active .icon{
+    color: #0c7db1;
+}
+
+ul li a:hover:before,
+ul li a.active:before{
+    display: block;
+}
+
+
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 250px;
+    transition: all 0.5s ease;
+}
+
+.top_navbar{
+    background: #100901;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+    z-index: 1000;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+
+
+
+.sidebar-small {
+    background: #100901;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.sidebar-small ul li a{
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    position: relative;
+}
+
+.sidebar-small .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.sidebar-small .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-small .profile img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}

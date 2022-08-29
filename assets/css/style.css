@@ -15,9 +15,12 @@
 aside {
     background-color: #d12e2e;
     height: 100vh;
+    /* text-align: center; */
+
 }
 .aside {
     position: fixed;
+    justify-content: center;
 }
 main {
     background-color: aqua;
@@ -41,4 +44,17 @@ main {
     .sidebar_close {
         grid-template-columns: 350px auto;
     }
+}
+
+li{
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+.portimage{
+    text-decoration: none;
 }
